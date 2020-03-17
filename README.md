@@ -1,19 +1,21 @@
 # ExamplePatterBridge
-Example :https://dotnettutorials.net/lesson/bridge-design-pattern/
 
-Decorator Design Pattern in C#
-The Bridge Design Pattern falls under the category of Structural Design Pattern.
+# Patron Bridge
+El patrón de diseño bridge se incluye en la categoría de patrón de diseño estructural
 
-favor composition over inheritance, change abstract class, interface abstraction
+favorecer la composición sobre la herencia, cambiar la clase abstracta(Se usa una interfaz , y no una clase abstracta para las figuras).
 
-Colores 
+```
+# Colores
 Azul
 Morado
 Rojo 
-
-Figuras 
+```
+```
+# Figuras 
 Cuadrado
 Circulo
+```
 
 # Sin el uso del patron bridge se tendria que crear  las siguientes clases (3 * 2) = 6
 
@@ -34,9 +36,7 @@ IColor --> Interface
 Morado
 Azul
 Rojo
-```
 
-```
 IFigura
 Cuadrado
 Circulo
