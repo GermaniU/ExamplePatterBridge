@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6B307691-7D64-4E09-8BA2-0713D42A70AF}</ProjectGuid>
+    <ProjectGuid>{63FEDE80-F1F8-430F-9DAE-DC6E56B31A43}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BridgePattern</RootNamespace>
-    <AssemblyName>BridgePattern</AssemblyName>
+    <RootNamespace>BridgeColores</RootNamespace>
+    <AssemblyName>BridgeColores</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\Base\AbstractRemoteControl.cs" />
-    <Compile Include="Clases\Implementacion\SamsungLedTv.cs" />
-    <Compile Include="Clases\SamsungRemoteControl.cs" />
-    <Compile Include="Clases\Implementacion\SonyLedTv.cs" />
-    <Compile Include="Clases\SonyRemoteControl.cs" />
-    <Compile Include="Interface\IRemoteControl.cs" />
-    <Compile Include="Interface\IAccionesControlRemoto.cs" />
+    <Compile Include="Clases\CirculoAzul.cs" />
+    <Compile Include="Clases\CirculoRojo.cs" />
+    <Compile Include="Clases\CuadradoAzul.cs" />
+    <Compile Include="Clases\CuadradoRojo.cs" />
+    <Compile Include="Clases\Pattern\Azul.cs" />
+    <Compile Include="Clases\Pattern\Circulo.cs" />
+    <Compile Include="Clases\Pattern\Cuadrado.cs" />
+    <Compile Include="Clases\Pattern\Morado.cs" />
+    <Compile Include="Clases\Pattern\Rojo.cs" />
+    <Compile Include="Interfaces\IColor.cs" />
+    <Compile Include="Interfaces\IFigura.cs" />
+    <Compile Include="Interfaces\IFiguraConColor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
