@@ -15,8 +15,10 @@ Figuras
 Cuadrado
 Circulo
 
-Sin el uso del patron bridge se tendria que crear  las siguientes clases (3 * 2) = 6
-IFiguraConColor 
+# Sin el uso del patron bridge se tendria que crear  las siguientes clases (3 * 2) = 6
+
+```
+IFiguraConColor  --> Interface
 CuadradoAzul
 CuadradoRojo
 CuadradoMorado
@@ -24,16 +26,20 @@ CuadradoMorado
 CirculoAzul
 CirculoRojo
 CirculoMorado
+```
 
-Con el patron brige (3 +2 ) = 5
-IColor
+# Con el patron brige (3 +2 ) = 5
+```
+IColor --> Interface
 Morado
 Azul
 Rojo
+```
 
+```
 IFigura
 Cuadrado
 Circulo
+```
 
-En las clases cuadrado y circulo se recibe como dependencia la abstraccion de la clase color y solo se le
-enviaria el color de la figurada deseada.
+# En las clases cuadrado y circulo se recibe como dependencia la abstraccion(IColor) de la clase color.
